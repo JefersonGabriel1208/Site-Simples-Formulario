@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(logolc.png);
+    background-color: #ca2745;
+    background-image: linear-gradient(0deg, #e62a4c, #bb1c38 0%, #597b9e, #372991, #180f53,#05021a 100%);
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-align: center; /* Centraliza o conteúdo na página */
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #ffffff;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 80%; /* Limita a largura máxima do título */
+    padding-top: 20px; /* Espaçamento superior */
+}
+
+section {
+    padding-top: 20px; /* Espaçamento superior para o conteúdo abaixo do título */
+}
+
+fieldset {
+    border: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #372991; /* Cor de fundo do campo (roxo mais escuro em cima) */
+    border-radius: 4px;
+    background-image: linear-gradient(0deg, #e62a4c, #bb1c38 0%, #597b9e, #372991, #180f53,#05021a 100%);
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #ffffff;
+    display: block;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+    padding: 0.8em;
+    width: 100%; /* Preenche toda a largura disponível */
+    border: 1px solid #8c6dc4; /* Cor da borda dos campos */
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+    background-color: #ffffff; /* Cor de fundo dos inputs */
+    color: #000000; /* Cor do texto dos inputs */
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background: #e0e0f8; /* Cor de fundo ao focar */
+}
+
+input[type="submit"] {
+    font-size: 1.3em;
+    background-image: linear-gradient(0deg, #e62a4c, #bb1c38 0%, #597b9e, #372991, #180f53,#05021a 100%);
+    border: 0;
+    padding: 0.8em 1.2em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.foto {
+    background: url(logo.jpeg) no-repeat scroll left top;
+    position: absolute;
+    top: 10px;
+    height: 200px;
+    width: 300px;
+    left: calc(50% - 150px);
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    z-index: -1;
+}
+
+/* Consulta de mídia para tablets (largura máxima de 768 pixels) */
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 5%;
+    }
+
+    #titulo {
+        max-width: 90%;
+    }
+
+    fieldset {
+        max-width: 90%;
+    }
+}
+
+/* Consulta de mídia para smartphones (largura máxima de 480 pixels) */
+@media only screen and (max-width: 480px) {
+    body {
+        margin-left: 3%;
+    }
+
+    #titulo {
+        max-width: 95%;
+    }
+
+    .campo,
+    label {
+        margin-bottom: 0.3em;
+    }
+}
